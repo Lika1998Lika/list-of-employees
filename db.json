@@ -1,0 +1,276 @@
+{
+  "staff_tags": [
+    {
+      "id": 1,
+      "title": "Критические",
+      "slug": "critical",
+      "color": "#E52E2E"
+    },
+    {
+      "id": 2,
+      "title": "Проблемные",
+      "slug": "problem",
+      "color": "#E2BD06"
+    },
+    {
+      "id": 3,
+      "title": "Есть замечания",
+      "slug": "warning",
+      "color": "#00B6ED"
+    },
+    {
+      "id": 4,
+      "title": "Выполнено",
+      "slug": "done",
+      "color": "#00AE5B"
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "icon": "/icons/ru.svg",
+      "title": "Россия",
+      "slug": "ru"
+    },
+    {
+      "id": 2,
+      "icon": "/icons/tj.svg",
+      "title": "Таджикистан",
+      "slug": "tj"
+    },
+    {
+      "id": 3,
+      "icon": "/icons/kz.svg",
+      "title": "Казахстан",
+      "slug": "kz"
+    },
+    {
+      "id": 4,
+      "icon": "/icons/usa.svg",
+      "title": "США",
+      "slug": "usa"
+    }
+  ],
+  "positions": [
+    {
+      "id": 1,
+      "name": "Продавец"
+    },
+    {
+      "id": 2,
+      "name": "Юрист"
+    },
+    {
+      "id": 3,
+      "name": "Машинист"
+    },
+    {
+      "id": 4,
+      "name": "Программист"
+    },
+    {
+      "id": 5,
+      "name": "Бухгалтер"
+    }
+  ],
+  "type_contracts": [
+    {
+      "id": 1,
+      "title": "ТД",
+      "slug": "td"
+    },
+    {
+      "id": 2,
+      "title": "ГПХ",
+      "slug": "gph"
+    },
+    {
+      "id": 3,
+      "title": "Кандидат",
+      "slug": "candidate"
+    },
+    {
+      "id": 4,
+      "title": "СМЗ",
+      "slug": "smz"
+    }
+  ],
+  "genders": [
+    {
+      "id": 1,
+      "title": "Мужской",
+      "slug": "male"
+    },
+    {
+      "id": 2,
+      "title": "Женский",
+      "slug": "female"
+    }
+  ],
+  "employees": [
+    {
+      "full_name": "Иванов Иван Иванович",
+      "inn": "1234567890",
+      "address": "г. Москва, ул. Ленина, д. 1",
+      "date_birth": "12.04.1985",
+      "age": 39,
+      "type_contract": {
+        "id": 1,
+        "title": "ТД",
+        "slug": "td"
+      },
+      "type_contact_id": 1,
+      "gender": {
+        "id": 1,
+        "title": "Мужской",
+        "slug": "male"
+      },
+      "gender_id": 1,
+      "country": {
+        "id": 1,
+        "icon": "/icons/ru.svg",
+        "title": "Россия",
+        "slug": "ru"
+      },
+      "country_id": 1,
+      "position": {
+        "id": 1,
+        "name": "Продавец"
+      },
+      "position_id": 1,
+      "status": {
+        "tag_id": 1,
+        "tag": {
+          "id": 1,
+          "title": "Критические",
+          "slug": "critical",
+          "color": "#FF0000"
+        },
+        "description": "Истекают все документы"
+      }
+    },
+    {
+      "full_name": "Петрова Анна Сергеевна",
+      "inn": "2345678901",
+      "address": "г. Санкт-Петербург, ул. Невская, д. 5",
+      "date_birth": "01.02.1990",
+      "age": 34,
+      "type_contract": {
+        "id": 2,
+        "title": "ГПХ",
+        "slug": "gph"
+      },
+      "type_contact_id": 2,
+      "gender": {
+        "id": 2,
+        "title": "Женский",
+        "slug": "female"
+      },
+      "gender_id": 2,
+      "country": {
+        "id": 2,
+        "icon": "/icons/tj.svg",
+        "title": "Таджикистан",
+        "slug": "tj"
+      },
+      "country_id": 2,
+      "position": {
+        "id": 2,
+        "name": "Юрист"
+      },
+      "position_id": 2,
+      "status": {
+        "tag_id": 2,
+        "tag": {
+          "id": 2,
+          "title": "Проблемные",
+          "slug": "problem",
+          "color": "#FFA500"
+        },
+        "description": "Истекает патент"
+      }
+    },
+    {
+      "full_name": "Смирнов Алексей Олегович",
+      "inn": "3456789012",
+      "address": "г. Казань, пр-т Победы, д. 12",
+      "date_birth": "15.06.1995",
+      "age": 29,
+      "type_contract": {
+        "id": 3,
+        "title": "Кандидат",
+        "slug": "candidate"
+      },
+      "type_contact_id": 3,
+      "gender": {
+        "id": 1,
+        "title": "Мужской",
+        "slug": "male"
+      },
+      "gender_id": 1,
+      "country": {
+        "id": 3,
+        "icon": "/icons/kz.svg",
+        "title": "Казахстан",
+        "slug": "kz"
+      },
+      "country_id": 3,
+      "position": {
+        "id": 3,
+        "name": "Машинист"
+      },
+      "position_id": 3,
+      "status": {
+        "tag_id": 3,
+        "tag": {
+          "id": 3,
+          "title": "Есть замечания",
+          "slug": "warning",
+          "color": "#FFD700"
+        },
+        "description": "Пропустил медосмотр"
+      }
+    },
+    {
+      "full_name": "Ким Эвелина Петровна",
+      "inn": "4567890123",
+      "address": "г. Алматы, ул. Абая, д. 33",
+      "date_birth": "10.03.1998",
+      "age": 26,
+      "type_contract": {
+        "id": 4,
+        "title": "СМЗ",
+        "slug": "smz"
+      },
+      "type_contact_id": 4,
+      "gender": {
+        "id": 2,
+        "title": "Женский",
+        "slug": "female"
+      },
+      "gender_id": 2,
+      "country": {
+        "id": 3,
+        "icon": "/icons/kz.svg",
+        "title": "Казахстан",
+        "slug": "kz"
+      },
+      "country_id": 3,
+      "position": {
+        "id": 4,
+        "name": "Программист"
+      },
+      "position_id": 4,
+      "status": {
+        "tag_id": 4,
+        "tag": {
+          "id": 4,
+          "title": "Выполнено",
+          "slug": "done",
+          "color": "#32CD32"
+        },
+        "description": "Прошел все процедуры"
+      }
+    }
+  ]
+}
