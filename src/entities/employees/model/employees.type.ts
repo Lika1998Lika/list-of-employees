@@ -43,6 +43,7 @@ export type StaffStatusType = {
 
 // Сотрудник
 export type EmployeeType = {
+  id: number,
   full_name: string;       // ФИО
   inn: string;             // ИНН
   address: string;         // Адрес

@@ -1,7 +1,12 @@
+import { workerApi } from '../../entities/employees';
 import './col-1.css';
 import { TopBarSearch } from './top-bar-search';
 
 export function EmployeesList() {
+
+  const { data } = workerApi.useEmployeesQuery();
+  console.log(data)
+
   return (
     <div className='col_1'>
       <TopBarSearch />
@@ -15,11 +20,9 @@ export function EmployeesList() {
           <li><button className="tabs_done">Выполнено</button></li>
         </ul>
         <ul className='cards-item'>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
+          {
+            data?.map((item) => { return (<li key={item.id}>{item.full_name}</li>) })
+          }
         </ul>
       </div>
       <button className='btn-show_more'>Показать еще</button>

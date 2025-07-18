@@ -1,10 +1,14 @@
 body {
-  display: flex;
+  display: block;
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  /* max-width: 1920px; */
-  width: 1440px;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
   background: #F7F8F9;
 }
 * {
