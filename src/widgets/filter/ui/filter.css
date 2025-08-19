@@ -1,98 +1,60 @@
-.col-2 {
+.block_filter {
+  width: 100%;
+  height: auto;
+  background-color:#FFFFFF;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  width: 50%;
-  max-width: 400px;
-  height: 600px;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 1);
-}
-
-.btn-add_employees {
-  height: 104px;
-}
-
-.btn_add {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  font-family: "Montserrat", sans-serif;
-  width: 350px;
-  height: 55px;
-  background-color: rgba(0, 182, 237, 1);
-  color: rgba(255, 255, 255, 1);
-  border-radius: 4px;
-  padding: 0;
-  margin: 30px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 120px;
-  letter-spacing: 0%;
-  border: none;
-  transition: background-color 0.3s ease
-}
-
-.btn_add:hover {
-  background-color: rgba(0, 182, 237, 0.2);
-}
-
-.block_filter {
-  height: 500px;
-  margin-left: 20px;
-  margin-right: 20px;
+  gap: 20px;
 }
 
 .block_filter_text {
-font-size: 26px;
+font-size: clamp(14px, calc(12px + 0.7vw), 26px);
 font-weight: 600;
 margin: 0;
 padding: 0;
 color: rgba(4, 20, 35, 1);
 }
 
-.block_row {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-margin-top: 10px;
-}
-
-.citizenship_row,
-.gender_row {
-height: 60px;
+.block_row-1 {
+display: grid;
+grid-template-columns: 2fr 2fr;
+gap: 20px;
 font-family: "Montserrat", sans-serif;
 color: rgba(4, 20, 35, 1);
-font-size: 15px;
+font-size: clamp(13px, 0.9vw, 15px);
 font-weight: 500;
 }
 
 .job_title_row {
-  margin-top: 20px;
+display: grid;
+grid-template-rows: 4fr;
+font-family: "Montserrat", sans-serif;
+color: rgba(4, 20, 35, 1);
+font-size: clamp(13px, 0.9vw, 15px);
+font-weight: 500;
+margin-top: 20px;
 }
 
 #citizenship, #gender {
-  width: 50%;
-  height: 46px;
+  width: 100%;
+  height: 45px;
   border: 1px solid rgba(224, 235, 239, 1);
   background-color: rgba(232, 241, 244, 1);
   margin-top: 10px;
   border-radius: 4px;
   color: rgba(132, 144, 155, 1);
-  font-size: 15px;
+  font-size: clamp(13px, 0.9vw, 15px);
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
 }
 #job_title {
-  width: 50%px;
-  height: 46px;
+  width: 100%;
+  height: 45px;
   border: 1px solid rgba(224, 235, 239, 1);
   background-color: rgba(232, 241, 244, 1);
   margin-top: 10px;
   color: rgba(132, 144, 155, 1);
-  font-size: 15px;
+  font-size: clamp(13px, 0.9vw, 15px);
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   border-radius: 4px;
@@ -103,33 +65,31 @@ display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 justify-content: flex-start;
-margin-top: 20px;
 gap: 10px;
 }
 
 .block_agreement p {
- font-size: 15px;
+ font-size: clamp(14px, 0.9vw, 16px);
  font-weight: 500;
  color: rgba(4, 20, 35, 1);
+ line-height: 120%;
  margin: 0;
 }
 
 .block_btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 66px;
+display: grid;
+grid-template-columns: 2fr 2fr;
+gap: 20px;
+flex-wrap: wrap;
 }
 
 .btn_1, .btn_2 {
-  height: 46px;
-  width: 253.5px;
+  height: 45px;
   border-radius: 4px;
   border: none;
   transition: background-color 0.3s ease;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: clamp(13px, 0.9vw, 15px);
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
 }

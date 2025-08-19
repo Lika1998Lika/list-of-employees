@@ -1,0 +1,1 @@
+export { TopBarSearch } from './ui/top-bar-search';

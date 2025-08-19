@@ -1,1 +1,1 @@
-export { EmployeesList } from './employees-list';
+export { EmployeesList } from './compose/employees-list';

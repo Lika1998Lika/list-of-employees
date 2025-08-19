@@ -1,0 +1,11 @@
+.carts-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.carts-item li {
+  background-color: rgba(231, 243, 255, 1);
+  height: auto;
+  border-radius: 4px;
+  padding: 20px;
+}

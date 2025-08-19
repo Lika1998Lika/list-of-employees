@@ -1,0 +1,33 @@
+.list-employees {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color:#FFFFFF;
+}
+
+.list-employees h1 {
+font-size: clamp(18px, 1.5vw, 26px);
+font-weight: 600;
+margin: 0;
+color: rgba(4, 20, 35, 1);
+}
+
+.btn-show_more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  width: 186px;
+  min-width: 130px;
+  height: 45px;
+  border: 1px solid rgba(42, 53, 140, 1);
+  border-radius: 4px;
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 14px; 
+  padding-left: 24px;
+  font-size: clamp(14px, 0.8vw, 18px);
+  color: rgba(42, 53, 140, 1);
+  font-weight: 500;
+  line-height: 120%;
+}
