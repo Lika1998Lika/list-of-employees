@@ -46,6 +46,7 @@ export type EmployeeType = {
   id: number,
   full_name: string;       // ФИО
   inn: string;             // ИНН
+  city: string;
   address: string;         // Адрес
   date_birth: string;      // Дата рождения в формате DD.MM.YYYY
   age: number;             // Возраст

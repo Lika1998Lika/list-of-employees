@@ -1,11 +1,99 @@
+p {
+ margin: 0;
+}
+
+span {
+  text-transform: uppercase;
+}
+
 .carts-item {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.text-14 {
+  font-size: clamp(12px, 0.8vw, 14px);
+  color: #041423;
+  font-weight: 400;
+  line-height: 120%;
 }
 .carts-item li {
   background-color: rgba(231, 243, 255, 1);
   height: auto;
   border-radius: 4px;
   padding: 20px;
+}
+
+.text-14px {
+  font-size: clamp(12px, 0.8vw, 14px);
+}
+
+.carts-block-empl {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.carts-line-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.full_name {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(16px, 0.95vw, 18px);
+  margin: 0;
+  font-weight: 600;
+  color: #2A358C;
+}
+
+.carts-line-inn {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.carts-line-inn p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(12px, 0.7vw, 13px);
+  font-weight: 500;
+  color: #84909B;
+  line-height: 120%;
+  padding: 4px;
+}
+
+.carts-line-contract {
+  background-color: #00AE5B;
+  border-radius: 4px;
+}
+
+.carts-line-contract p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(12px, 0.7vw, 13px);
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 120%;
+  padding: 4px;
+}
+
+.carts-line-2 {
+ display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.carts-status-docs {
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.carts-status-docs p {
+  color: #FFFFFF;
+  padding: 4px;
 }

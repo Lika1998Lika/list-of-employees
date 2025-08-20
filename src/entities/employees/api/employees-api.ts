@@ -19,4 +19,13 @@ const useEmployeeQuery = (id: number) => {
   })
 };
 
-export {useEmployeeQuery, useEmployeesQuery}
+const useContryQuery = () => {
+  return useQuery({
+    queryKey: ['contry'],
+    queryFn: () => employeesApi.getCountries(),
+    placeholderData: keepPreviousData,
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+export {useEmployeeQuery, useEmployeesQuery, useContryQuery}
