@@ -1,5 +1,5 @@
 import { Api } from "../../../shared/api"
-import type { CountryType, EmployeeType } from "../model/employees.type"
+import type { CountryType, EmployeeType, StaffTagType } from "../model/employees.type"
 
 const getEmployees = async () => {
   const response = await Api.get<EmployeeType[]>(`/employees`);
@@ -16,4 +16,9 @@ const getCountries = async () => {
   return response.data
 }
 
-export const employeesApi = { getEmployee, getEmployees, getCountries };
+const getStaffTags = async () => {
+  const response = await Api.get<StaffTagType[]>(`/staff_tags`);
+  return response.data
+}
+
+export const employeesApi = { getEmployee, getEmployees, getCountries, getStaffTags };

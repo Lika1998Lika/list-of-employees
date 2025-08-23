@@ -28,4 +28,13 @@ const useContryQuery = () => {
   })
 }
 
-export {useEmployeeQuery, useEmployeesQuery, useContryQuery}
+const useStaffTags = () => {
+  return useQuery({
+    queryKey: ['staff_tags'],
+    queryFn: () => employeesApi.getStaffTags(),
+    placeholderData: keepPreviousData,
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+export {useEmployeeQuery, useEmployeesQuery, useContryQuery, useStaffTags};

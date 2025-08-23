@@ -5,7 +5,6 @@ import './carts-employees.css';
 export function CartsEmployees() {
   const { data } = workerApi.useEmployeesQuery();
 
-
   return (
     <ul className='carts-item'>
       {

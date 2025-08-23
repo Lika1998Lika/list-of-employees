@@ -2,9 +2,9 @@
   "staff_tags": [
     {
       "id": 1,
-      "title": "Критические",
-      "slug": "critical",
-      "color": "#E52E2E"
+      "title": "Весь список",
+      "slug": "all",
+      "color": "#B0BCC7"
     },
     {
       "id": 2,
@@ -14,12 +14,18 @@
     },
     {
       "id": 3,
+      "title": "Критические",
+      "slug": "critical",
+      "color": "#E52E2E"
+    },
+    {
+      "id": 4,
       "title": "Есть замечания",
       "slug": "warning",
       "color": "#00B6ED"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Выполнено",
       "slug": "done",
       "color": "#00AE5B"
