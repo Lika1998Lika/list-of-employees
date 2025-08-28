@@ -1,6 +1,8 @@
 import './filter.css';
+import { getNames } from 'country-list';
 
 export function Filter() {
+  const countryList = getNames();
   return (
     <div className='block_filter px-30'>
       <h1 className='block_filter_text'>Фильтр</h1>
@@ -12,6 +14,13 @@ export function Filter() {
             <br />
             <select id='citizenship'>
               <option value="">Выберите страну</option>
+              {
+                countryList.map((country) => {
+                  return (
+                    <option key={country} value={country}>{country}</option>
+                  )
+                })
+              }
             </select>
           </div>
 
@@ -20,6 +29,8 @@ export function Filter() {
             <br />
             <select id='gender'>
               <option value="">Без разницы</option>
+              <option key="male" value="male">Женский</option>
+              <option key="female" value="female">Мужской</option>
             </select>
           </div>
         </div>
