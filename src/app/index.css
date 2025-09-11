@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0 solid;
-  background: #F7F8F9;
+  background: black;
 }
 * {
   box-sizing: border-box;
@@ -31,7 +31,7 @@ ul {
   .container {
     flex-direction: column;
   }
-    .col_1,
+  .col_1,
   .col_2 {
     width: 100%;
   }

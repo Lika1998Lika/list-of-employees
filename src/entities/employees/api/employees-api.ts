@@ -37,4 +37,39 @@ const useStaffTags = () => {
   })
 }
 
-export {useEmployeeQuery, useEmployeesQuery, useContryQuery, useStaffTags};
+const usePositions = () => {
+  return useQuery({
+    queryKey: ['positions'],
+    queryFn: () => employeesApi.getPositions(),
+    placeholderData: keepPreviousData,
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+const useContracts = () => {
+  return useQuery({
+    queryKey: ['contracts'],
+    queryFn: () => employeesApi.getContracts(),
+    placeholderData: keepPreviousData,
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+const useGenders = () => {
+  return useQuery({
+    queryKey: ['genders'],
+    queryFn: () => employeesApi.getGenders(),
+    placeholderData: keepPreviousData,
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+export {  
+  useEmployeeQuery, 
+  useEmployeesQuery, 
+  useContryQuery, 
+  useStaffTags, 
+  usePositions, 
+  useContracts,
+  useGenders
+};

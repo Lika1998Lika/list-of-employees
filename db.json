@@ -54,32 +54,52 @@
       "id": 4,
       "icon": "/icons/usa.svg",
       "title": "США",
-      "slug": "usa"
+      "slug": "us"
     }
   ],
   "positions": [
     {
       "id": 1,
-      "name": "Продавец"
-    },
-    {
-      "id": 2,
-      "name": "Юрист"
-    },
-    {
-      "id": 3,
-      "name": "Машинист"
-    },
-    {
-      "id": 4,
       "name": "Программист"
     },
     {
+      "id": 2,
+      "name": "Тестировщик"
+    },
+    {
+      "id": 3,
+      "name": "Системный администратор"
+    },
+    {
+      "id": 4,
+      "name": "DevOps-инженер"
+    },
+    {
       "id": 5,
-      "name": "Бухгалтер"
+      "name": "Data Scientist"
+    },
+    {
+      "id": 6,
+      "name": "Аналитик данных"
+    },
+    {
+      "id": 7,
+      "name": "Frontend-разработчик"
+    },
+    {
+      "id": 8,
+      "name": "Backend-разработчик"
+    },
+    {
+      "id": 9,
+      "name": "UX/UI-дизайнер"
+    },
+    {
+      "id": 10,
+      "name": "Архитектор ПО"
     }
   ],
-  "type_contracts": [
+  "contracts": [
     {
       "id": 1,
       "title": "ТД",
@@ -264,10 +284,10 @@
       },
       "gender_id": 2,
       "country": {
-        "id": 3,
+        "id": 4,
         "icon": "/icons/kz.svg",
-        "title": "Казахстан",
-        "slug": "kz"
+        "title": "США",
+        "slug": "us"
       },
       "country_id": 3,
       "position": {

@@ -21,7 +21,7 @@ export type PositionType = {
 };
 
 // Тип договора
-export type TypeContractType = {
+export type TypeContract = {
   id: number;
   title: string;
   slug: string;
@@ -50,7 +50,7 @@ export type EmployeeType = {
   address: string;         // Адрес
   date_birth: string;      // Дата рождения в формате DD.MM.YYYY
   age: number;             // Возраст
-  type_contract: TypeContractType; // Объект типа договора
+  type_contract: TypeContract; // Объект типа договора
   type_contact_id: number;     // ID типа договора
   gender: GenderType;              // Объект пола
   gender_id: number;           // ID пола
