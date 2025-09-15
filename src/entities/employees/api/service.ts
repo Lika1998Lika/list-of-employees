@@ -30,11 +30,11 @@ const getStaffTags = async () => {
 const getPositions = async () => {
   const response = await Api.get<PositionType[]>(`/positions`);
   return response.data;
-}
+};
 
 const getContracts = async () => {
   return (await Api.get<TypeContract[]>(`/contracts`)).data;
-}
+};
 
 
 const getGenders = async () => {

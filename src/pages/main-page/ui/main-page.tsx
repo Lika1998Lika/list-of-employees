@@ -1,5 +1,5 @@
 
-import { BtnAddEmployee } from '../../../widgets/add-employee/ui/btn-add-employee/btn-add-employee';
+import { BtnAddEmployee } from '../../../widgets/add-employee';
 import { EmployeesList } from '../../../widgets/employees-list';
 import { Filter } from '../../../widgets/filter';
 import { TopBarSearch } from '../../../widgets/top-bar-search';
