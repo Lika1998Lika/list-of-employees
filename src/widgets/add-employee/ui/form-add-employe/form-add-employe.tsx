@@ -1,5 +1,7 @@
 import Modal from 'react-modal';
 import './style.css';
+import { OptionsFilter } from '../../../filter';
+//import { workerApi } from '../../../../entities/employees';
 
 type Props = {
   closeModal: () => void;
@@ -8,6 +10,10 @@ type Props = {
 
 export function FormAddEmploye(props: Props) {
   const { closeModal, modalIsOpen } = props;
+  // const { data, isLoading, isError } = workerApi.usePositions();
+  // const { data: conracts } = workerApi.useContracts();
+  // const { data: genders } = workerApi.useGenders();
+  //if (isLoading || isError) return <h3>Error</h3>
 
   return (
     <Modal
@@ -38,6 +44,8 @@ export function FormAddEmploye(props: Props) {
         <label>Дата рождения:
           <input type="date" name="birthdate" />
         </label>
+
+        <OptionsFilter />
       </form>
     </Modal>
   )
