@@ -15,7 +15,7 @@ export const UiSelect = (props: PropsOptions) => {
         {
           options.map((item) => {
             return (
-              <option key={item.value} value={item.value}>{item.label}</option>
+              <option key={item.id} value={item.value}>{item.label}</option>
             )
           })
         }

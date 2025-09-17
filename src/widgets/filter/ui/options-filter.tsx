@@ -6,7 +6,6 @@ import './filter.css';
 import { getNames } from 'country-list';
 
 export function OptionsFilter() {
-  const countryList = getNames().map((item) => ({ value: item, label: item }))
   const { data, isLoading, isError } = workerApi.usePositions();
   const { data: conracts } = workerApi.useContracts();
   const { data: genders } = workerApi.useGenders();
@@ -14,15 +13,16 @@ export function OptionsFilter() {
   if (!data || !conracts || !genders) return;
   if (isLoading || isError) return <h3>Error</h3>
 
-  const positionsOptions: Option[] = data.map((i) => ({ value: i.id, label: i.name })) ?? [];
-  const gendersOptions: Option[] = genders?.map((i) => ({ value: i.slug, label: i.title })) ?? [];
-  const contractsOptions: Option[] = conracts?.map((i) => ({ value: i.slug, label: i.title })) ?? [];
+  const countryList = getNames().map((item) => ({ id: item, value: item, label: item }))
+  const positionsOptions: Option[] = data.map((i) => ({ id: i.id, value: i.id, label: i.name })) ?? [];
+  const gendersOptions: Option[] = genders?.map((i) => ({ id: i.id, value: i.slug, label: i.title })) ?? [];
+  const contractsOptions: Option[] = conracts?.map((i) => ({ id: i.id, value: i.slug, label: i.title })) ?? [];
   return (
     <>
       <section>
         <div className='block_row-1'>
           <div className='citizenship_row'>
-            <UiSelect id='citizenship' label='Гражданство' options={[{ value: '', label: 'Выберите страну' }, ...countryList]} />
+            <UiSelect id='citizenship' label='Гражданство' options={[{ id: '', value: '', label: 'Выберите страну' }, ...countryList]} />
           </div>
 
           <div className='gender_row'>
@@ -31,13 +31,13 @@ export function OptionsFilter() {
         </div>
 
         <div className='job_title_row'>
-          <UiSelect id='job_title' label='Должность' options={[{ value: '', label: 'Все должности' }, ...positionsOptions]} />
+          <UiSelect id='job_title' label='Должность' options={[{ id: '', value: '', label: 'Все должности' }, ...positionsOptions]} />
         </div>
       </section>
 
       <section className='block_agreement'>
         <p>Тип договора</p>
-        <UiRadioGroup name='contractType' options={contractsOptions} />
+        <UiRadioGroup options={contractsOptions} />
       </section>
     </>
   )

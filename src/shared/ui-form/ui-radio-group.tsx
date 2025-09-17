@@ -12,7 +12,7 @@ export function UiRadioGroup(props: PropsOprions) {
       {
         options.map((item) => {
           return (
-            <li key={item.value}>
+            <li key={item.id}>
               <label htmlFor={item.label}>
                 <input {...inputProps} id={item.label} type="radio" value={item.value} />
                 {item.label}
