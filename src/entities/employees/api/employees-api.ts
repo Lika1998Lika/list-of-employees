@@ -1,4 +1,4 @@
-import { keepPreviousData, useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { employeesApi } from "./service";
 
 const useEmployeesQuery = () => {
@@ -64,6 +64,17 @@ const useGenders = () => {
   })
 }
 
+const useAddEmployees = () => {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: employeesApi.addEmployee,
+    onSuccess() {
+      queryClient.invalidateQueries({queryKey: ['empl']})
+    },
+  })
+}
+
 export {  
   useEmployeeQuery, 
   useEmployeesQuery, 
@@ -71,5 +82,6 @@ export {
   useStaffTags, 
   usePositions, 
   useContracts,
-  useGenders
+  useGenders,
+  useAddEmployees
 };

@@ -1,6 +1,7 @@
 import { Api } from "../../../shared/api"
 import type { 
   CountryType, 
+  EmployeeFormData, 
   EmployeeType, 
   GenderType, 
   PositionType, 
@@ -16,6 +17,11 @@ const getEmployee = async (id: number) => {
   const response = await Api.get<EmployeeType>(`/employees/${id}`);
   return response.data
 };
+
+const addEmployee = async (dto: EmployeeFormData) => {
+  const response = await Api.post<EmployeeType>('/employees', dto);
+  return response.data
+}
 
 const getCountries = async () => {
   const response = await Api.get<CountryType>(`/countries`);
@@ -47,5 +53,6 @@ export const employeesApi = {
   getStaffTags, 
   getPositions, 
   getContracts,
-  getGenders 
+  getGenders,
+  addEmployee 
 };

@@ -61,6 +61,23 @@ export type EmployeeType = {
   status: StaffStatusType;         // Статус сотрудника
 };
 
+export type EmployeeFormData = {
+  full_name: string;       // ФИО
+  inn: string;             // ИНН
+  city: string;
+  address: string;         // Адрес
+  date_birth: string;      // Дата рождения в формате DD.MM.YYYY
+  age: number;             // Возраст
+  type_contract: TypeContract; // Объект типа договора
+  type_contact_id: number;     // ID типа договора
+  gender: GenderType;              // Объект пола
+  gender_id: number;           // ID пола
+  country: CountryType;            // Объект гражданства
+  country_id: number;          // ID гражданства
+  position: PositionType;          // Объект должности
+  position_id: number;         // ID должности
+  status: StaffStatusType;         // Статус сотрудника
+};
 // export type EmployeesType = {
 //   full_name: string;
 //   inn: string;
